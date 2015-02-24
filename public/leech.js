@@ -16,5 +16,5 @@ var Leech = function(){ }
   It returns 1.
 */
 Leech.prototype.use = function(opponent) {
-  
+  opponent.health -= 1
 }

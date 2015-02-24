@@ -15,4 +15,6 @@ var Simple = function(){ }
 */
 Simple.prototype.use = function(opponent) {
   
+  opponent.health -= 3
+  return 3
 }
