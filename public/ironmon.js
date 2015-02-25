@@ -13,7 +13,7 @@ var Ironmon = function(name, type) {
   
   this.health = 25;
   this.power = 1;
-  this.charge = false;
+  this.charged = false;
   this.type = type;
   this.name = name;
 }
@@ -65,6 +65,6 @@ Ironmon.prototype.active = function() {
     passing in the opponent Ironmon as a parameter.
 */
 Ironmon.prototype.action = function(opponent, action) {
-
+  return action.use.call(this, opponent);
 }
 

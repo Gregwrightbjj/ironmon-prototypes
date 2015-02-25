@@ -16,5 +16,11 @@ var Leech = function(){ }
   It returns 1.
 */
 Leech.prototype.use = function(opponent) {
+  
   opponent.health -= 1
+  var halfTime = _.sample([1,2])
+  if(halfTime === 1){
+  	this.health += 1;
+  }
+  return 1;
 }
